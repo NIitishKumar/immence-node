@@ -21,6 +21,10 @@ mongoose
 
 app.use("/api/product",productRoutes)
 
+app.get("/", (req,res) =>{
+    res.send("Server is running...")
+})
+
 
 app.listen(4000,err => {
     if(err){
